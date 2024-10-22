@@ -1,0 +1,9 @@
+export { default as baktbigbottom } from './backteriaBig.png';
+export { default as bakt1 } from './bakt1.png';
+export { default as bakt2 } from './bakt2.png';
+export { default as bakt3 } from './bakt3.png';
+export { default as bakt4 } from './bakt4.png';
+export { default as bakt5 } from './bakt5.png';
+export { default as bakt6 } from './bakt6.png';
+export { default as pinksperm1 } from './pinksperm1.png';
+export { default as pinksperm2 } from './pinksperm2.png';

@@ -1,0 +1,98 @@
+.card-message {
+  position: relative;
+  height: 380px;
+  margin-top: 50px;
+  margin-left: 0;
+  padding: 0 120px 20px 70px;
+  overflow-x: hidden;
+  direction: rtl;
+
+  p {
+    font:
+      20px/1.5 DINPro,
+      sans-serif;
+  }
+
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20rem;
+    background: no-repeat url('@/assets/images/secondSlide/thumb.png');
+  }
+}
+
+.card-background {
+  position: absolute;
+  top: 220px;
+  left: 130px;
+  width: 800px;
+  height: 400px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0 0 30px 2px #dad9da;
+  z-index: -1;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: -52px;
+    width: 4px;
+    height: 97%;
+    background: black;
+  }
+}
+
+.sperm-1,
+.sperm-2,
+.sperm-3,
+.sperm-4,
+.sperm-5 {
+  position: absolute;
+  z-index: -2;
+}
+
+.sperm-1 {
+  top: 100px;
+  left: 360px;
+}
+
+.sperm-2 {
+  top: 100px;
+  left: 570px;
+}
+
+.sperm-3 {
+  top: 75px;
+  left: 710px;
+}
+
+.sperm-4 {
+  bottom: 138px;
+  right: -85px;
+}
+
+.sperm-5 {
+  bottom: 125px;
+  right: -430px;
+}
+
+.animate {
+  animation: sperm 2s ease;
+}
+
+/* Animations */
+@keyframes sperm {
+  from {
+    opacity: 0;
+    transform: translate(50%, 70%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

@@ -1,0 +1,122 @@
+.slide-btn-next {
+  position: absolute;
+  right: 170px;
+  bottom: 200px;
+}
+
+.animation-item-pink-sperm-1 {
+  position: absolute;
+  bottom: 30px;
+  left: -50px;
+}
+
+.animation-item-pink-sperm-2 {
+  position: absolute;
+  top: 183px;
+  right: 0;
+}
+
+.animation-item-bacteria-1 {
+  position: absolute;
+  bottom: 185px;
+  left: 25px;
+  animation: bakt1 5s infinite alternate linear;
+  z-index: -1;
+}
+
+.animation-item-bacteria-2 {
+  position: absolute;
+  top: 210px;
+  right: 60px;
+  animation: bakt2 40s infinite normal linear;
+  z-index: 2;
+}
+
+.animation-item-bacteria-3 {
+  position: absolute;
+  top: 80px;
+  left: -45px;
+}
+
+.animation-item-bacteria-4 {
+  position: absolute;
+  top: 70px;
+  right: 250px;
+  animation: bakt4 5s infinite alternate linear;
+}
+
+.animation-item-bacteria-5 {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+}
+
+.animation-item-bacteria-6 {
+  position: absolute;
+  bottom: 70px;
+  left: 350px;
+}
+
+.animation-item-bacteria-large {
+  position: absolute;
+  right: 260px;
+  bottom: -100px;
+  animation: baktbig 6s infinite alternate linear;
+}
+
+/* Animations */
+@keyframes bakt1 {
+  from {
+    transform: translate(-10%, -20%);
+  }
+
+  to {
+    transform: translate(30%, 60%);
+  }
+}
+
+@keyframes bakt2 {
+  0% {
+    transform: scale(0.9) rotate(0deg) translate(0, 0);
+  }
+
+  25% {
+    transform: scale(1) rotate(90deg) translate(-70%, 120%);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(180deg) translate(80%, 0%);
+  }
+
+  75% {
+    transform: scale(1.2) rotate(270deg) translate(70%, 20%);
+  }
+
+  100% {
+    transform: scale(0.9) rotate(360deg) translate(0, 0);
+  }
+}
+
+@keyframes bakt4 {
+  from {
+    transform: translate(50%, 70%);
+  }
+
+  to {
+    transform: translate(-25%, -15%);
+  }
+}
+
+@keyframes baktbig {
+  0% {
+    transform: scale(1.2) rotate(0deg) translate(-10%, -5%);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(5deg) translate(-5%, -3%);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+}

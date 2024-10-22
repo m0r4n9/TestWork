@@ -1,0 +1,27 @@
+.button-component {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff76a5;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px color-mix(in srgb, #ff6a98 40%);
+}
+
+.btn-left-icon {
+  background-color: black;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    rgb(53 52 52 / 71.3%) 3px 3px 6px 0 inset,
+    rgba(68 67 67 / 81.4%) -3px -3px 6px 1px inset;
+
+  svg {
+    color: white;
+  }
+}
