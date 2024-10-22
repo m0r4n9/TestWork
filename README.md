@@ -19,13 +19,11 @@
 1. Клонируйте репозиторий:
 
    ```sh
-   git clone <URL вашего репозитория>
-
+   git clone https://github.com/m0r4n9/TestWork.git
 2. Устновка зависимости:
 
     ```sh
     npm install
-
 3. Запуска проекта
 
     ```sh
@@ -37,12 +35,10 @@
 
    ```sh
    npm run build
-
 2. Для запуска артефакта:
 
     ```sh
     npm run preview
-
 3. Для запуска артефакта по локальной сети:
 
     ```sh
