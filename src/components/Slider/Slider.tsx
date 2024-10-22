@@ -38,7 +38,7 @@ export const Slider = () => {
     if (!mouseDown) return;
 
     const clientX = getClientX(event);
-    const diff = Math.abs(gitstartX - clientX) < 30 ? 0 : startX - clientX;
+    const diff = Math.abs(startX - clientX) < 30 ? 0 : startX - clientX;
 
     const x = Math.min(
       0,
@@ -54,6 +54,7 @@ export const Slider = () => {
 
     setCurrentX(x);
   };
+
   const handleSwipeEnd = (
     event: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>,
   ) => {

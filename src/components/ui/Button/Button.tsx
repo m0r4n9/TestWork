@@ -11,9 +11,9 @@ interface CustomButtonProps
 
 export const Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(
   (props, ref) => {
-    const { children, iconLeft, className } = props;
+    const { children, iconLeft, className, ...rest } = props;
     return (
-      <button {...props} ref={ref} className={`button-component ${className}`}>
+      <button {...rest} ref={ref} className={`button-component ${className}`}>
         {iconLeft && <div className='btn-left-icon'>{iconLeft}</div>}
         {children}
       </button>
